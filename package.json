@@ -1,0 +1,30 @@
+{
+  "name": "typescript-mocha",
+  "version": "1.0.0",
+  "description": "boilerplate typescript and mocha",
+  "main": "./dist/app.js",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "build": "tsc ./src/app.ts --outDir ./dist",
+    "test": "mocha -w --compilers ts:ts-node/register test/**/*test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonpalmqvist/typescript-mocha.git"
+  },
+  "author": "simonpalmqvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonpalmqvist/typescript-mocha/issues"
+  },
+  "homepage": "https://github.com/simonpalmqvist/typescript-mocha#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/sinon": "^1.16.31",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6",
+    "typescript": "^2.0.6"
+  }
+}
